@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="top-banner">
+        <div class="container">
+          <h1 class="heading">Simple Weather App</h1>
+          <div class="form">
+            <input
+              id="getCityName"
+              type="text"
+              placeholder="Search for a city"
+              autofocus
+            />
+            <button onclick="getWeatherData()" type="submit">SUBMIT</button>
+            <span class="msg"></span>
+          </div>
+        </div>
+      </section>
+      <section class="ajax-section">
+        <div class="container">
+          <ul class="cities">
+            <li class="city">
+              <div class="weatherStatus">
+                <h2 class="city-name">
+                  <span id="cityName">Your City</span>
+                  <sup id="countryName">Country</sup>
+                </h2>
+                <div class="city-temp">
+                  <span id="temperature">00</span><sup>°C</sup>
+                </div>
+              </div>
+
+              <figure>
+                <img src="images/cloudy.png" id="weatherIcon" />
+                <figcaption id="description">Haze</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="container madeBy">
+          <small
+            >Made with <span>❤</span> by
+            <a href="https://github.com/rashedul360" target="_blank"
+              >MD Rashedul islam</a
+            >
+          </small>
+        </div>
+      </footer>
+    </main>
+    <script src="weather.js"></script>
+  </body>
+</html>
