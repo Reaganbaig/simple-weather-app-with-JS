@@ -4,7 +4,7 @@ const getWeatherData = () => {
   fetch(apiUrl)
     .then((res) => res.json())
     .then((data) => weatherObject(data));
-
+getCityName.value=""
   /* Temperature convert kelvin to celsius
   --------------------------------------- */
   const toCelsius = (kelvinTemp) => kelvinTemp - 273.15;
